@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <img src="https://s.tmimgcdn.com/scr/1200x750/279100/logo-design-for-e-commerce-website-or-e-business-with-shopping-bag-and-click-cursor_279127-original.jpg" width="100px" alt="E Commerce Logo">
+        <div class="nav-country">
+            <img src="https://i.pinimg.com/474x/e1/81/b7/e181b7cb6dec98c4d8efb94cfa77471c.jpg" height="30px" alt="Location pin">
+            <div>
+                <p>Delivery all over</p>
+                <h1>INDIA</h1>
+            </div>
+        </div>
+        <div class="nav-search">
+            <div class="nav-search-category">
+                <p>All</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/60/60995.png" height="12px" alt="dropdown icon">
+            </div>
+            <input type="text" class="nav-search-input" placeholder="Search">
+            <img src="https://static.vecteezy.com/system/resources/previews/009/341/164/original/search-icon-sign-symbol-design-free-png.png" class="nav-search-icon" alt="Search icon">
+        </div>
+        <div class="nav-flag">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_India.png/1280px-Flag_of_India.png" width="25px" alt="India National Flag">
+            <p>EN</p>
+            <img src="https://icons.veryicon.com/png/o/file-type/gzdt-icon/drop-down-solid.png" width="8px" alt="Dropdown icon">
+        </div>
+        <div class="nav-text">
+            <h1>Login <img src="https://icons.veryicon.com/png/o/file-type/gzdt-icon/drop-down-solid.png" width="8px" alt="Dropdown icon"></h1>
+        </div>
+        <div class="nav-text">
+            <p>Returns</p>
+            <h1>& Orders</h1>
+        </div>
+        <a href="Cart area" class="nav-cart">
+            <img src="https://pngimg.com/d/shopping_cart_PNG64.png" width="35px" alt="Cart icon">
+        </a>
+    </nav>
+    <div class="flex-box">
+        <div class="left">
+            <div class="big-img">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/kgfg2vk0-0/t-shirt/s/c/t/xl-fr-rneck-blk-fabrag-original-imafwntmgzacgtnt.jpeg?q=90&crop=false">
+            </div>
+            <div class="images">
+                <div class="small-img">
+                    <img src="https://rukminim2.flixcart.com/image/850/1000/kgfg2vk0-0/t-shirt/s/c/t/xl-fr-rneck-blk-fabrag-original-imafwntmgzacgtnt.jpeg?q=90&crop=false" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="https://rukminim2.flixcart.com/image/850/1000/kiow6fk0-0/t-shirt/l/6/b/m-maroon-t-shirt-for-mens-and-boys-amayra-enterprises-original-imafyfzfsuaywntz.jpeg?q=90&crop=false" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="https://rukminim2.flixcart.com/image/850/1000/kiow6fk0-0/t-shirt/s/h/l/l-white-t-shirt-for-mens-and-boys-amayra-enterprises-original-imafyfzfgc5cfcdn.jpeg?q=90&crop=false" onclick="showImg(this.src)">
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="url">Home > Product > T-Shirt</div>
+            <div class="pname">T-Shirts for Men</div>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">Rs.500</div>
+            <div class="size">
+                <p>Size :</p>
+                <div class="psize active">M</div>
+                <div class="psize">L</div>
+                <div class="psize">XL</div>
+                <div class="psize">XXL</div>
+            </div>
+            <div class="quantity">
+                <p>Quantity :</p>
+                <input type="number" min="1" max="10" value="1">
+            </div>
+            <div class="btn-box">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let bigImg = document.querySelector('.big-img img');
+        function showImg(pic){
+            bigImg.src = pic;
+        }
+    </script>
+
+</body>
+</html>
